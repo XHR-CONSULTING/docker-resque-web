@@ -6,8 +6,8 @@ services:
   restart: always
 
  resque-web:
-  image: abuisine/resque-web:2.4.0
+  build: ../
   depends_on:
    - redis
   ports:
-   - "80:80"
+   - "8081:80"
